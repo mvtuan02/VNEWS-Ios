@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="CellVideoRelated" customModule="VNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" userLabel="w">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Tin liên quan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiJ-iw-zan">
+                        <rect key="frame" x="20" y="0.0" width="100" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="myAutoFontSize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(56)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ue-5Z-fwJ">
+                        <rect key="frame" x="128" y="0.0" width="28.5" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" red="0.22745098039215686" green="0.32549019607843138" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="myAutoFontSize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dKY-2D-Tif">
+                        <rect key="frame" x="0.0" y="38" width="375" height="132"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OO2-Eh-BKO">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="7ue-5Z-fwJ" firstAttribute="leading" secondItem="MiJ-iw-zan" secondAttribute="trailing" constant="8" id="T1Y-sN-Vof"/>
+                    <constraint firstAttribute="trailing" secondItem="dKY-2D-Tif" secondAttribute="trailing" id="Zhw-xS-xks"/>
+                    <constraint firstItem="MiJ-iw-zan" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bNa-Fz-WnN"/>
+                    <constraint firstItem="dKY-2D-Tif" firstAttribute="top" secondItem="MiJ-iw-zan" secondAttribute="bottom" constant="16" id="dkN-wK-JUL"/>
+                    <constraint firstItem="MiJ-iw-zan" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ila-vx-kAe"/>
+                    <constraint firstAttribute="bottom" secondItem="MiJ-iw-zan" secondAttribute="bottom" constant="148" id="jLl-RW-P2J"/>
+                    <constraint firstItem="7ue-5Z-fwJ" firstAttribute="centerY" secondItem="MiJ-iw-zan" secondAttribute="centerY" id="mUO-o7-h7a"/>
+                    <constraint firstAttribute="bottom" secondItem="dKY-2D-Tif" secondAttribute="bottom" id="phB-ow-ygU"/>
+                    <constraint firstItem="dKY-2D-Tif" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rUt-BQ-9YP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomTinLienQuan" destination="jLl-RW-P2J" id="vch-kT-IbL"/>
+                <outlet property="clvPlaylist" destination="dKY-2D-Tif" id="H2c-1a-ELa"/>
+                <outlet property="lblCountPlaylist" destination="7ue-5Z-fwJ" id="zaB-7u-6nJ"/>
+            </connections>
+            <point key="canvasLocation" x="158.69565217391306" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

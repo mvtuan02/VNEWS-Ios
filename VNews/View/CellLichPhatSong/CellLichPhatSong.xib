@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellLichPhatSong" customModule="VNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZ2-GS-UoC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgV-9h-d6N">
+                                <rect key="frame" x="20" y="14" width="39.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="myAutoFontSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEm-Ud-jyQ">
+                                <rect key="frame" x="0.0" y="49.5" width="375" height="0.5"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="QC4-Z5-YEj"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 3" translatesAutoresizingMaskIntoConstraints="NO" id="y3w-Qw-FtB">
+                                <rect key="frame" x="347" y="16" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="CbO-00-xLK"/>
+                                    <constraint firstAttribute="width" secondItem="y3w-Qw-FtB" secondAttribute="height" id="mHr-NV-E4Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bản tin thời sự 22h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-bC-MNR">
+                                <rect key="frame" x="84.5" y="15.5" width="128.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="myAutoFontSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4P-uP-Y5a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="msF-QV-ubv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b4P-uP-Y5a" firstAttribute="leading" secondItem="hZ2-GS-UoC" secondAttribute="leading" id="7Su-iF-I6W"/>
+                            <constraint firstAttribute="bottom" secondItem="SEm-Ud-jyQ" secondAttribute="bottom" id="CTm-Zn-rVy"/>
+                            <constraint firstItem="BgF-bC-MNR" firstAttribute="centerY" secondItem="hZ2-GS-UoC" secondAttribute="centerY" id="QNK-bj-Cb6"/>
+                            <constraint firstItem="fgV-9h-d6N" firstAttribute="centerY" secondItem="hZ2-GS-UoC" secondAttribute="centerY" id="Sxa-qY-Mzd"/>
+                            <constraint firstItem="fgV-9h-d6N" firstAttribute="leading" secondItem="hZ2-GS-UoC" secondAttribute="leading" constant="20" id="bvB-0c-jSg"/>
+                            <constraint firstAttribute="trailing" secondItem="SEm-Ud-jyQ" secondAttribute="trailing" id="cFu-yw-ybG"/>
+                            <constraint firstItem="b4P-uP-Y5a" firstAttribute="top" secondItem="hZ2-GS-UoC" secondAttribute="top" id="e0l-00-bcN"/>
+                            <constraint firstAttribute="trailing" secondItem="BgF-bC-MNR" secondAttribute="trailing" priority="250" constant="10" id="feZ-Cz-SDc"/>
+                            <constraint firstAttribute="trailing" secondItem="y3w-Qw-FtB" secondAttribute="trailing" constant="20" id="nVl-Lc-hZy"/>
+                            <constraint firstItem="SEm-Ud-jyQ" firstAttribute="leading" secondItem="hZ2-GS-UoC" secondAttribute="leading" id="o3C-ck-P6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="b4P-uP-Y5a" secondAttribute="trailing" id="pHr-Zj-oIa"/>
+                            <constraint firstItem="BgF-bC-MNR" firstAttribute="leading" secondItem="fgV-9h-d6N" secondAttribute="trailing" constant="25" id="wtp-I0-Pf7"/>
+                            <constraint firstItem="y3w-Qw-FtB" firstAttribute="top" secondItem="hZ2-GS-UoC" secondAttribute="top" constant="16" id="xwQ-ye-8GZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hZ2-GS-UoC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bok-ED-DiG"/>
+                <constraint firstAttribute="bottom" secondItem="hZ2-GS-UoC" secondAttribute="bottom" id="SjZ-5e-jVz"/>
+                <constraint firstAttribute="trailing" secondItem="hZ2-GS-UoC" secondAttribute="trailing" id="biX-Ml-avG"/>
+                <constraint firstItem="hZ2-GS-UoC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qaw-UI-qRZ"/>
+            </constraints>
+            <size key="customSize" width="124" height="61"/>
+            <connections>
+                <outlet property="imgDot" destination="y3w-Qw-FtB" id="Kuz-ZS-8kc"/>
+                <outlet property="lblTime" destination="fgV-9h-d6N" id="udF-qP-q8X"/>
+                <outlet property="lblTitle" destination="BgF-bC-MNR" id="3aA-fD-XtU"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="95.424107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Ellipse 3" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

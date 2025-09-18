@@ -7,7 +7,6 @@
 
 import UIKit
 import Firebase
-import Sentry
 import AVFoundation
 import GoogleMobileAds
 @available(iOS 13.0, *)
@@ -23,10 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        SentrySDK.start { options in
-            options.dsn = "https://6b0c0c721630485aa9cceab91e58ac5e@sentry.admon.com.vn/12"
-            options.debug = true // Enabled debug when first installing is always helpful
-        }
+    
         NetworkMonitor.shared.startMonitoring()
         //FirebaseApp.configure()
         
